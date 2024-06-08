@@ -1,31 +1,23 @@
 import React from 'react';
 import '../App.css';
+import { ToastContainer, toast ,Bounce} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  const sendEmail = () => {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+   const sendEmail = ()=>{
+    toast.success('🦄 successfully send data', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
 
-    if (!name || !email || !message) {
-      alert("Please fill in all fields.");
-      return;
     }
-
-    // Email sending logic here with the new SecureToken
-    window.Email.send({
-      SecureToken: "7ae35071-57a7-4fb2-aa23-e740336b7758",
-      To: 'abpatel1249@gmail.com',
-      From: "abpatel1249@gmail.com",
-      Subject: "New Message from FW PORTFOLIO!",
-      Body: `Name: ${name}<br> Email: ${email}<br> Message: ${message}`
-    }).then(
-      message => alert("Message sent successfully!")
-    ).catch(
-      error => alert("There was an error sending your message: " + error)
-    );
-  };
-
   return (
     <section className="contact" id="contact">
       <div className="contact-moldure">
@@ -40,6 +32,19 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </section>
   );
 };

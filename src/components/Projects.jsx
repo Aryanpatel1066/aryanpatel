@@ -10,10 +10,15 @@ const Projects = () => {
         <h2>Each project is planned and is part of my coding history 💻</h2>
       </div>
       <div className="projects-content">
+        
         {projectImgs.map((project, index) => (
+          <div>
           <a href={project.link} target="_blank" rel="noreferrer" key={index}>
-            <img src={project.img} alt={project.alt} />
+            <img className="projectImg"src={project.img} alt={project.alt} />
+            
           </a>
+        
+          </div>
         ))}
       </div>
       <div className="projects-button">

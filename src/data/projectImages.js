@@ -11,6 +11,7 @@ const projectImgs = [
       img: project2,
       alt: "Project 2"
     },
+      
     // Add more projects as needed
   ];
   

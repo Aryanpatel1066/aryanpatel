@@ -31,10 +31,7 @@ export const skills = [
       name:'java',
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
     },
-    {
-      name:'java',
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-    },
+    
     // Add more skills as needed
   ];
   

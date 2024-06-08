@@ -77,13 +77,46 @@ body {
     .img-home img{
         width:240px;
     }
+    
 }
- .skills{
- width: auto;
-    display: flex;
-    justify-content: space-between;
+  .skills{
+ /* width: auto; */
+     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
- }
+    gap:4px;
+    /* border:2px solid blueviolet; */
+  }
+ .skillImg{
+    /* flex: 1 1 1 100px; */
+    max-width: 100px;
+    /* border:2px solid red; */
+    /* flex-wrap: wrap; */
+    /* width:100px; */
+   }
+   .skillImg img{
+    width: 100%;
+    height: auto;
+   }
+   @media (max-width: 480px) {
+    .skillImg {
+        flex: 1 1  50px; /* Adjust base width for mobile screens */
+        max-width: 50px;
+    }
+}
+@media (max-width: 315px) {
+    .skillImg {
+        flex: 1 1 1  35px; /* Adjust base width for mobile screens */
+        max-width: 35px;
+    
+    }
+    .skills{
+     max-width: 240px;
+     height: auto;
+      gap:4px;
+      margin-left: 50px;
+     }
+}
 .img-home img:hover {
     transform: scale(1.1);
 }
@@ -242,7 +275,7 @@ body {
 }
 
 .projects-content img:hover {
-    filter: brightness(0.5);
+    filter: brightness(0.9);
     transform: scale(0.98);
 }
 
@@ -392,7 +425,7 @@ form button:hover {
     /* HOME */
     .header-buttons {
         display: none;
-    }
+     }
 
     .home {
         flex-direction: column;
@@ -401,11 +434,14 @@ form button:hover {
     }
 
     .header {
-        display: none;
+        /* display: none; */
+        /* border:2px solid purple; */
     }
 
     .header-logo {
         display: none;
+        /* position: relative;
+        right:400px; */
     }
 
     /* .img-home img {
@@ -501,9 +537,9 @@ form button:hover {
     }
 @media (max-width:355px) {
     .about-content h2{
-        width:300px;
+        width:250px;
         text-align: center;
-        margin-left: 30px;
+        margin-left: 35px;
     }
     .about-content p{
         width: 250px;
@@ -529,11 +565,15 @@ form button:hover {
         margin-top: 100px;
         transition: .3s;
     }
-
+@media  (max-width: 330px) {
+    .projects-content{
+        grid-template-columns: auto;
+    }
+}
     .projects-content img {
         width: 150px;
         box-shadow: 0px 0px 20px 1px rgb(26, 26, 26, 0.2);
-
+          /* border:2px solid red; */
     }
 
     .projects-text h2 {
@@ -569,3 +609,66 @@ form button:hover {
     height: 50px;
     
 }
+ /* hover effect in card */
+ .projectImg{
+    /* border:2px solid red; */
+ }
+  
+
+ /* apply education  */
+ /* App.css */
+
+.slider-container {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .tabs button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    transition: border-bottom 0.3s;
+  }
+  
+  .tabs button.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+  }
+  
+  .content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    width:900px;
+    margin:1rem auto;
+/* background-color:#f8f9fa; */
+  background-color: #E9EcF7;
+  }
+  
+  .tab-content h3 {
+    margin: 0 0 10px;
+  }
+  
+  .tab-content p {
+    margin: 5px 0;
+  }
+  
+  .tab-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tab-content a:hover {
+    text-decoration: underline;
+  }
+  
