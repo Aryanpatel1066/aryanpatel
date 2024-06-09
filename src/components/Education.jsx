@@ -2,41 +2,43 @@ import React, { useState } from 'react';
 import "../App.css"
 
 const Education = () => {
-  const [activeTab, setActiveTab] = useState('Multiplier');
+  const [activeTab, setActiveTab] = useState('gph');
 
   return (
     
       <div className="content">
+        <div className="educationHeading">Education</div>
         <div className="slider-container">
       <div className="tabs">
         <button
-          className={activeTab === 'Multiplier' ? 'active' : ''}
-          onClick={() => setActiveTab('Multiplier')}
+          className={activeTab === 'gph' ? 'active' : ''}
+          onClick={() => setActiveTab('gph')}
         >
-          Multiplier
+          Diploma (CE)
         </button>
         <button
-          className={activeTab === 'Acko' ? 'active' : ''}
-          onClick={() => setActiveTab('Acko')}
+          className={activeTab === 'ldrp' ? 'active' : ''}
+          onClick={() => setActiveTab('ldrp')}
         >
-          Acko
+          BE (CE)
         </button>
       </div>
-        {activeTab === 'Multiplier' && (
+        {activeTab === 'gph' && (
           <div className="tab-content">
-            <h3>DevOps Engineer - Multiplier</h3>
-            <p>Feb 2024 - Present</p>
+            <h3>Diploma Engineer(CE) </h3>
+            <p>Oct 2020 - Sep 2023 <span className='grade'><span className='helightGrade'>Grade:</span> 8.43</span></p>
             <p>
-              Working as DevOps engineer at <a href="https://usemultiplier.com">usemultiplier.com</a>.
+              I completed my diploma  <a href="https://www.gphn.cteguj.in">polytechnic himatnagar.com</a>.
             </p>
           </div>
         )}
-        {activeTab === 'Acko' && (
+        {activeTab === 'ldrp' && (
           <div className="tab-content">
-            <h3>DevOps Engineer - Acko</h3>
-            <p>Jan 2022 - Jan 2024</p>
+            <h3>Bechlor Of Engineering(
+              CE) - LDRP</h3>
+            <p>Sap 2023 - Apr 2026 <span className='grade'><span className='helightGrade'>Grade:</span> 7.60</span></p>
             <p>
-              Worked as DevOps engineer at <a href="https://acko.com">acko.com</a>.
+              pursuing BE at LDRP  <a href="https://www.ldrp.ac.in">ldrp.com</a>.
             </p>
           </div>
         )}

@@ -11,11 +11,15 @@ const Projects = () => {
       </div>
       <div className="projects-content">
         
-        {projectImgs.map((project, index) => (
-          <div>
-          <a href={project.link} target="_blank" rel="noreferrer" key={index}>
-            <img className="projectImg"src={project.img} alt={project.alt} />
-            
+        {projectImgs.map(({id,link,alt,img,languages}) => (
+          <div className='projectCard'>
+          <a href={link} target="_blank" rel="noreferrer" key={id}>
+            <img id="projectImg"src={img} alt={alt} />
+            <div className='languagesDiv'>
+                {languages.map((language, langIndex) => (
+                  <button className="lanBtn"key={langIndex}>{language}</button>
+                ))}
+              </div>
           </a>
         
           </div>
