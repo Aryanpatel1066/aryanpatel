@@ -11,18 +11,23 @@ const Projects = () => {
       </div>
       <div className="projects-content">
         
-        {projectImgs.map(({id,link,alt,img,languages}) => (
-          <div className='projectCard'>
+        {projectImgs.map(({id,link,alt,img,languages,title,description,githublink}) => (
+      <div className='projectCard'>
           <a href={link} target="_blank" rel="noreferrer" key={id}>
-            <img id="projectImg"src={img} alt={alt} />
+            <img id="projectImg"src={img} alt={alt} /></a>
             <div className='languagesDiv'>
-                {languages.map((language, langIndex) => (
-                  <button className="lanBtn"key={langIndex}>{language}</button>
-                ))}
+                 {languages.map((language, langIndex) => (
+                  <div className="lanBtn"key={langIndex}>{language}</div>
+                    ))}
               </div>
-          </a>
-        
-          </div>
+              <h5 className='projectTitle'>{title}</h5>
+              <div className="projectDescription">{description}</div>
+              <div className="projectFooter">
+                <a href={githublink} target='_blank' rel='noreferrer'>
+              <i className='bx bxl-github'id='githubIcon'></i>
+              </a>
+              </div>
+           </div>
         ))}
       </div>
       <div className="projects-button">
@@ -33,3 +38,5 @@ const Projects = () => {
 };
 
 export default Projects;
+<a href="https://github.com/Aryanpatel1066" target="_blank" rel="noreferrer">
+</a>
