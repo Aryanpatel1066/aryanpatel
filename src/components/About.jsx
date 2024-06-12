@@ -15,7 +15,7 @@ const About = () => {
             translate ideas into functional code. My collaboration and passion for programming, coupled with
             my ability to learn quickly, make me a valuable asset to any development team.
           </p>
-          <h3>Skills:</h3>
+          <h3 id='skillHead'>Skills:</h3>
           <div className="skills">
             {skills.map(skill => (
               <img  className="skillImg"key={skill.name} src={skill.icon} alt={skill.name} />

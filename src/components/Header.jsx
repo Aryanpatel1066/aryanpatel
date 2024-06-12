@@ -25,7 +25,7 @@ const Header = () => {
         <a href="#contact" className="active-contact">Contact</a>
         <i
           className={`bx ${theme === 'light' ? 'bx-moon' : 'bxs-sun'}`}
-          onClick={toggleTheme}
+          onClick={toggleTheme} id='moonIcon'
         ></i>
       </div>
     </header>
