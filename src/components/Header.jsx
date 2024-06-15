@@ -35,6 +35,7 @@ const Header = () => {
         ></i>
         </div>
         <FontAwesomeIcon onClick={openSlider} className='hambargur' icon={faBars} />
+        {/* if user click habar then only show this slidbar */}
          {open && <div className="slidBar">
           <div className="headerButtons">
         <a href="#home" className="active-home" id="home-but">Home</a>

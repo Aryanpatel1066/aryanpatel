@@ -100,6 +100,7 @@ body.dark {
 
 .img-home {
     cursor: pointer;
+    max-width: auto;
 }
 
 .img-home img {
@@ -113,12 +114,7 @@ body.dark {
     filter: brightness(1.1) contrast(1.1);
 }
 
-/* @media (max-width: 320px) {
-    .img-home img {
-        width: 240px;
-    }
-} */
-
+ 
 /* Skills */
 .skills {
     display: flex;
@@ -139,27 +135,9 @@ body.dark {
     height: auto;
 }
 
-/* @media (max-width: 480px) {
-    .skillImg {
-        max-width: 50px;
-    }
-}
-
-@media (max-width: 315px) {
-    .skillImg {
-        max-width: 35px;
-    }
-
-    .skills {
-        max-width: 240px;
-        margin-left: 50px;
-    }
-}
- */
-/* Section styles */
+ /* Section styles */
 .fw {
-    padding-inline: 50px;
-    padding-top: 40px;
+     padding-top: 40px;
 }
 
 .fw h1 {
@@ -681,7 +659,7 @@ footer {
    }
   
    /* Let's Make It respnsive */
- 
+ /* 1.1) navbar */
     .hambargur {
     display: none;
 }
@@ -723,12 +701,9 @@ footer {
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 552px) {
     .slidBar{
         display: block;
-    }
-    .header {
-        /* border: 2px solid red; */
     }
     .header-buttons {
         border: 2px solid green;
@@ -737,5 +712,37 @@ footer {
     .hambargur {
         display: block;
     }
+    .fw h1{
+        font-size: 2.2rem;
+    }
     
+}
+/* 1.2) home page */
+@media  (max-width:866px) {
+    .home{
+        border:2px solid greenyellow;
+        display: flex;
+        flex-direction: column;
+    }
+    .img-home{
+        border:2px solid red;
+    }
+    .fw{
+        border:2px solid pink;
+    }
+}
+@media (max-width:410px) {
+    .fw h2{
+        font-weight: 500;
+        font-size: 20px;
+        max-width: auto;
+    }
+}
+@media  (max-width:340px) {
+    .img-home img{
+        max-width:200px;
+     }
+     .fw h1{
+        font-size: 1.5rem;
+     }
 }

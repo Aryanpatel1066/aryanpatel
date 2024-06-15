@@ -2,9 +2,9 @@ import React from 'react';
 import '../App.css';
 // import memoji from '../assets/imgs/memoji1.png';
 import hello from "../assets/imgs/hello.jpeg"
-const Home = () => {
+ const Home = () => {
   return (
-    <section className="home" id="home">
+    <section className="home"  id="home">
       <div className="img-home">
         <img src={hello} alt="Memoji" />
       </div>
