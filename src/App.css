@@ -15,7 +15,7 @@ body.light {
     background-color: #E9EcF7;
     --header-bg-color: #ffffff;
     --header-text-color: #262626;
-    --header-alt-color: #f1f1f1; /* Alternative color for sticky header */
+    --header-alt-color: #f1f1f1; 
     --primary-color: #0088ff;
     --text-color: #323232;
     --text-color-light: #323232c3;
@@ -532,8 +532,7 @@ body.dark {
  */
 /* Footer */
 footer {
-    /* margin-top: 150px; */
-    padding: 20px;
+     padding: 20px;
     background: var(--backgound-color);
     color: var(--header-text-color);
     text-align: center;
@@ -681,3 +680,62 @@ footer {
     font-size: 40px;
    }
   
+   /* Let's Make It respnsive */
+ 
+    .hambargur {
+    display: none;
+}
+
+.slidBar {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    background-color:var(--backgound-color); 
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    /* border: 2px solid pink; */
+    z-index: 1000;
+    display: none;
+}
+
+.slidBar.open {
+    height: 400px; 
+}
+.headerButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left:50%;
+}
+.headerButtons a {
+    text-decoration: none;
+    color: var(--header-text-color);
+     font-weight: 700;
+    font-size: 20px;
+    margin:5px;
+}
+
+.headerButtons a:hover {
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 550px) {
+    .slidBar{
+        display: block;
+    }
+    .header {
+        /* border: 2px solid red; */
+    }
+    .header-buttons {
+        border: 2px solid green;
+        display: none;
+    }
+    .hambargur {
+        display: block;
+    }
+    
+}

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import 'boxicons/css/boxicons.min.css'; // Importing Boxicons CSS
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [theme, setTheme] = useState('light');
-
+  const [open,setOpen]=useState(false);
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
@@ -12,7 +14,11 @@ const Header = () => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
-
+  const openSlider = ()=>{
+    setOpen(!open);
+    console.log(open)
+  }
+   
   return (
     <header className="header">
       <div className="header-logo">
@@ -27,7 +33,20 @@ const Header = () => {
           className={`bx ${theme === 'light' ? 'bx-moon' : 'bxs-sun'}`}
           onClick={toggleTheme} id='moonIcon'
         ></i>
-      </div>
+        </div>
+        <FontAwesomeIcon onClick={openSlider} className='hambargur' icon={faBars} />
+         {open && <div className="slidBar">
+          <div className="headerButtons">
+        <a href="#home" className="active-home" id="home-but">Home</a>
+        <a href="#about" className="active-about">About</a>
+        <a href="#projects" className="active-projects">Projects</a>
+        <a href="#contact" className="active-contact">Contact</a>
+        <i
+          className={`bx ${theme === 'light' ? 'bx-moon' : 'bxs-sun'}`}
+          onClick={toggleTheme} id='moonIcon'
+        ></i>
+        </div>
+          </div>}
     </header>
   );
 };
