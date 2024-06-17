@@ -19,7 +19,16 @@ const projectImgs = [
       alt: "Project 2",
       githublink:"https://github.com/Aryanpatel1066/flipkartClone"
     },
-      
+    {
+      link: "https://aryanpatel1066.github.io/flipkartClone/index.html",
+      languages:["HTML5","CSS3","JS"],
+      title:"Flipkart Clone",
+      description:"Flipkart Clone And Product List Page Based On Api Call",
+      img: project2,
+      alt: "Project 2",
+      githublink:"https://github.com/Aryanpatel1066/flipkartClone"
+    },
+   
     // Add more projects as needed
   ];
   

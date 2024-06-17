@@ -30,8 +30,8 @@ const Projects = () => {
            </div>
         ))}
       </div>
-      <div className="projects-button">
-        <a href="https://github.com/Aryanpatel1066?tab=repositories" target="_blank" rel="noreferrer">See more</a>
+      <div className="button">
+        <a href="https://github.com/Aryanpatel1066?tab=repositories" target="_blank" rel="noreferrer">See More</a>
       </div>
     </section>
   );
