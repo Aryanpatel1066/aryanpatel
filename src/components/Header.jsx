@@ -65,7 +65,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Sidebar */}
-      <div className={`fixed top-0 right-0 w-2/3 h-full bg-white dark:bg-gray-800 shadow-lg transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 md:hidden sidebar`}>
+      <div className={`fixed top-0 right-0 w-2/3 h-full bg-white dark:bg-gray-800 shadow-lg transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 md:hidden sidebar`} id="mobileDrower">
       <FontAwesomeIcon onClick={()=>setOpen(false)}icon={faTimes}
 />        <div className="flex flex-col items-center justify-center h-full space-y-6 text-lg font-medium">
           <a href="#home" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>Home</a>

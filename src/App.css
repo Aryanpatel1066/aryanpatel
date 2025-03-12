@@ -44,6 +44,10 @@ body.dark {
   /* border:2px solid red; */
   background-color: var(--background-color-alt);
  }
+ #mobileDrower{
+  /* border:2px solid  red; */
+  background-color: var(--background-color-alt);
+ }
 /* Home component design */
 .home {
   justify-content: center;
