@@ -4,10 +4,10 @@ Welcome to my personal portfolio! This is a showcase of my work, projects, and s
 
 ## 📸 Portfolio Images
 ### Homepage
-![portfolio1](https://github.com/Aryanpatel1066/aryanpatel/assets/112760422/917eb176-74e3-484d-8e23-c7c8a428588b)
+ ![Image](https://github.com/user-attachments/assets/b0c836c5-dd36-4ced-bef2-8c85244878af)
 
 ### Project Showcase
-![portfolio2](https://github.com/Aryanpatel1066/aryanpatel/assets/112760422/51dee615-3803-495f-9367-5dc54ff37afc)
+![Image](https://github.com/user-attachments/assets/189f775f-2c42-48d5-b826-27718126acc1)
 
 ## 🌐 Live Demo
 Check out the live version of my portfolio [here](https://aryanpatel.vercel.app/).
@@ -17,24 +17,29 @@ Hello! I'm Aryan Patel, a passionate developer with experience in building web a
 
 ## 🛠️ Technologies & Tools
 - **Frontend:** HTML, CSS, JavaScript, React
-- **Backend:** Node.js, Express
- - **Version Control:** Git, GitHub
-- **Deployment:** Vercel, Heroku
+- **Version Control:** Git, GitHub
+- **Deployment:** Vercel
 
 ## 🏆 Projects
 Here are some of the projects I have worked on:
 
 ### Project 1: [shopyfy ecommerce]
-- **Description:** i create ecommerce app using react.
-- **Technologies Used:** Html5 css3 Js React.
-- **Live Demo:** [https://shopyfy-ecommerce.vercel.app/](#)
-- **Source Code:** [https://github.com/Aryanpatel1066/shopyfyEcommerce](#)
+- **Description:** A full-featured eCommerce web app with seamless shopping experience, secure payments, and user-friendly UI. Built with MERN stack for scalability and performance.
+- **Technologies Used:** Node.js, React.js, Mongo DB, express js, tailwind css.
+- **Live Demo:** [https://ecommerce-mern-mu.vercel.app/](#)
+- **Source Code:** [https://github.com/Aryanpatel1066/ecommerce_mern](#)
 
 ### Project 2: [flipkart clone]
-- **Description:** made flipcart home page clone and product list page based on api call.
+- **Description:** A Flipkart homepage clone with a dynamic product listing page using API calls. Built with HTML, CSS, and JavaScript for a responsive and interactive shopping experience.
 - **Technologies Used:** html5 css js.
 - **Live Demo:** [https://aryanpatel1066.github.io/flipkartClone/index.html](#)
 - **Source Code:** [https://github.com/Aryanpatel1066/flipkartClone](#)
+  
+### Project 3: [Notely note App]
+- **Description:**  A MERN stack-powered Todo app with intuitive task management, real-time updates, and a sleek user interface. Organize tasks efficiently with CRUD functionality.
+- **Technologies Used:** Node.js, React.js, Mongo DB, express js, tailwind css.
+- **Live Demo:** [https://notely-mern.vercel.app/](#)
+- **Source Code:** [https://github.com/Aryanpatel1066/notely-mern](#)
 
 ## 📫 Contact
 Feel free to reach out to me through the following platforms:
