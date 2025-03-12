@@ -16,7 +16,7 @@ const Contact = () => {
         <a href="https://www.linkedin.com/in/aryanpatel1066/" className="icon-link" target='_blank'>
         <i class='bx bxl-linkedin-square'></i>
         </a>
-        <a href="https://instagram.com/aryanpatel__2810" className="icon-link" target='_blank'>
+        <a href="https://instagram.com/aryanpatel1066" className="icon-link" target='_blank'>
         <i class='bx bxl-instagram'  ></i>
         </a>
       </div>

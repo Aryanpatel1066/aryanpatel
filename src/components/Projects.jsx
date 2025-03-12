@@ -7,7 +7,7 @@ const Projects = () => {
     <section className="projects" id="projects">
       <div className="projects-text">
         <h1>Projects</h1>
-        <h2>Each project is planned and is part of my coding history 💻</h2>
+        <h2>Each project reflects my growth and passion for coding. 💻</h2>
       </div>
       <div className="projects-content">
         

@@ -10,7 +10,7 @@ import hello from "../assets/imgs/hello.jpeg"
       </div>
       <div className="fw">
         <h1>Aryan Patel</h1>
-        <h2>Front-End Developer</h2>
+        <h2>Full Stack (MERN) Developer</h2>
         <p>A passionate developer, based in <strong>Gandhinagar, Gujarat. 📍</strong></p>
         <div className="fw-buttons">
           <a href="https://www.linkedin.com/in/aryanpatel1066/" target="_blank" rel="noreferrer">

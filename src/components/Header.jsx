@@ -1,53 +1,83 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css';
-import 'boxicons/css/boxicons.min.css'; // Importing Boxicons CSS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FaCode } from "react-icons/fa";
+
 
 const Header = () => {
-  const [theme, setTheme] = useState('light');
-  const [open,setOpen]=useState(false);
+  const [theme, setTheme] = useState("light");
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
-  const openSlider = ()=>{
+
+  const toggleMenu = () => {
     setOpen(!open);
-    console.log(open)
-  }
-   
+  };
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const closeMenu = (e) => {
+      if (open && !e.target.closest(".sidebar") && !e.target.closest(".menu-button")) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("click", closeMenu);
+    return () => document.removeEventListener("click", closeMenu);
+  }, [open]);
+
   return (
-    <header className="header">
-      <div className="header-logo">
-        <a href="#home"><i className='bx bx-code-alt'></i> aryan</a>
+    <header className="  shadow-md fixed w-full top-0 z-50" id="header">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+        
+        {/* Logo */}
+
+        <div className="text-xl font-bold">
+  <a href="#home" className="hea flex items-center gap-2">
+    <FaCode className="text-2xl" />
+    <span>Aryan</span>
+  </a>
+</div>
+
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex space-x-6 text-lg font-medium">          <FontAwesomeIcon icon={FaCode}/>
+
+          <a href="#home" className="hover:text-blue-500 transition">Home</a>
+          <a href="#about" className="hover:text-blue-500 transition">About</a>
+          <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
+          <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+          {/* Theme Toggle */}
+          <button onClick={toggleTheme} className="text-xl focus:outline-none">
+            <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />
+          </button>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button onClick={toggleMenu} className="md:hidden text-2xl focus:outline-none menu-button">
+          <FontAwesomeIcon icon={open ? faTimes : faBars} />
+        </button>
       </div>
-      <div className="header-buttons">
-        <a href="#home" className="active-home" id="home-but">Home</a>
-        <a href="#about" className="active-about">About</a>
-        <a href="#projects" className="active-projects">Projects</a>
-        <a href="#contact" className="active-contact">Contact</a>
-        <i
-          className={`bx ${theme === 'light' ? 'bx-moon' : 'bxs-sun'}`}
-          onClick={toggleTheme} id='moonIcon'
-        ></i>
+
+      {/* Mobile Sidebar */}
+      <div className={`fixed top-0 right-0 w-2/3 h-full bg-white dark:bg-gray-800 shadow-lg transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 md:hidden sidebar`}>
+      <FontAwesomeIcon onClick={()=>setOpen(false)}icon={faTimes}
+/>        <div className="flex flex-col items-center justify-center h-full space-y-6 text-lg font-medium">
+          <a href="#home" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>Home</a>
+          <a href="#about" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>About</a>
+          <a href="#projects" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>Projects</a>
+          <a href="#contact" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>Contact</a>
+          {/* Theme Toggle */}
+          <button onClick={toggleTheme} className="text-xl focus:outline-none">
+            <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />
+          </button>
         </div>
-        <FontAwesomeIcon onClick={openSlider} className='hambargur' icon={faBars} />
-        {/* if user click habar then only show this slidbar */}
-         {open && <div className="slidBar">
-          <div className="headerButtons">
-        <a href="#home" className="active-home" id="home-but">Home</a>
-        <a href="#about" className="active-about">About</a>
-        <a href="#projects" className="active-projects">Projects</a>
-        <a href="#contact" className="active-contact">Contact</a>
-        <i
-          className={`bx ${theme === 'light' ? 'bx-moon' : 'bxs-sun'}`}
-          onClick={toggleTheme} id='moonIcon'
-        ></i>
-        </div>
-          </div>}
+      </div>
     </header>
   );
 };

@@ -40,63 +40,20 @@ body.dark {
   padding-left: 10px;
 }
 /* Header styles */
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: var(--backgound-color);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  z-index: 4;
-}
-
-.header.sticky {
-  background: var(--header-alt-color);
-}
-
-.header-logo a {
-  text-decoration: none;
-  color: var(--header-text-color);
-  font-size: 32px;
-  font-weight: 700;
-  align-items: center;
-}
-
-.header-logo i {
-  align-items: center;
-  padding-inline: 5px;
-  font-size: 30px;
-  color: var(--primary-color);
-}
-
-.header-buttons a {
-  text-decoration: none;
-  color: var(--header-text-color);
-  padding-inline: 10px;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.header-buttons a:hover {
-  color: var(--primary-color);
-}
-
-/* Null element */
-.null {
-  height: 1px;
-}
-
+ #header{
+  /* border:2px solid red; */
+  background-color: var(--background-color-alt);
+ }
 /* Home component design */
 .home {
   justify-content: center;
   display: flex;
   align-items: center;
   margin-bottom: 150px;
-  margin-top: 100px;
-}
+  margin-top: 50px;
+  border:"2px solid red";
+  margin-top: 10rem;
+  }
 
 .img-home {
   cursor: pointer;
@@ -159,6 +116,7 @@ body.dark {
   color: var(--text-color-light);
   font-size: 22px;
   text-align: center;
+  margin-left: 1rem;
 }
 
 .fw-buttons {
@@ -267,135 +225,162 @@ body.dark {
 #html-img {
   padding-left: 0;
 }
-
-/* Projects */
+ /* Projects Section */
 .projects {
   padding-top: 100px;
-  /* border:2px solid aqua; */
+  /* border: 2px solid aqua; */
+  min-height: auto;
 }
+
+/* Projects Heading */
 .projects-text h1 {
-  color: var(--primary-color);
+  color: var(--header-text-color);
   font-size: 36px;
   text-align: center;
-  margin-bottom: 2rem;
-  /* border:2px solid pink; */
+  margin-bottom: 1.5rem;
 }
+
 .projects-text h2 {
-  font-weight: 1000;
-  font-size: 30px;
+  font-weight: 700;
+  font-size: 26px;
   color: var(--text-color);
-  /* border:2px solid greenyellow; */
+  text-align: center;
   margin-bottom: 2rem;
 }
 
+/* Projects Grid */
 .projects-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  /* border:2px solid red; */
+  gap: 20px; /* Added spacing between cards */
+  /* border: 2px solid red; */
 }
+
+/* Individual Project Card */
 .projectCard {
-  height: 410px;
-  max-width: 250px;
+  width: 280px;
   background-color: var(--background-color-alt);
   border-radius: 10px;
-  padding: 4px;
-  margin: 10px 15px;
+  padding: 10px;
+  margin: 10px;
   box-shadow: 0px 0px 10px var(--box-shadow-color);
-  filter: brightness(1) contrast(1);
-  transition: 0.5s;
-  /* border:2px solid purple; */
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projectCard:hover {
+  transform: translateY(-5px); /* Slight floating effect */
   cursor: pointer;
 }
 
+/* Project Image */
 #projectImg {
   width: 100%;
-  margin-bottom: 10px;
-  height: 50%;
-  display: block;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
 
-.projects-text {
-  text-align: center;
-}
-
+/* Languages Used */
 .languagesDiv {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .lanBtn {
-  text-align: center;
-  margin: 6px;
-  padding: 4px 6px;
-  border-radius: 0;
-  border: none;
-  height: 20px;
-  width: auto;
   font-size: 12px;
   font-weight: 600;
+  padding: 6px 10px;
   background-color: #eaedf0;
   color: #343a40;
   border-radius: 5px;
-  padding-top: 6px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
+.lanBtn:hover {
+  background-color: #d6d9df;
+  transform: scale(1.05);
+}
+
+/* Project Title */
 .projectTitle {
   font-size: 1.25rem;
-  margin-top: 0.25rem;
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 5px;
 }
 
+/* Project Description */
 .projectDescription {
-  font-family: lora, serif;
-  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: 8px;
+  line-height: 1.5;
 }
 
+/* Project Footer (GitHub Link) */
 .projectFooter {
-  height: 50px;
-  margin-top: 1rem;
-  /* background-color: #eaedf0; */
+  margin-top: 10px;
   border-top: 2px dotted var(--text-color);
-  /* background-color: ; */
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .projectFooter a {
-  color: var(--color);
-  font-family: lora, serif;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 2rem;
-  text-align: center;
-  padding: 1rem;
+  color: var(--primary-color);
+  font-size: 24px;
+  transition: color 0.3s;
 }
+
+.projectFooter a:hover {
+  color: #0056b3;
+}
+
+/* See More Button */
 .button {
   font-size: 16px;
   background-color: #007bff;
-  /* color: #fff; */
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 96px;
+  width: 120px;
+  height: auto;
   padding: 10px 15px;
   text-align: center;
   margin: 2px auto;
   position: relative;
   top: 20px;
 }
-.button a {
-  /* color:white; */
-  color: white;
-  text-decoration: none;
-}
 .button:hover {
   background-color: white;
+  color: #007bff;
   border: 1px solid #007bff;
+  transform: scale(1.05);
 }
-.button:hover a {
-  color: #000000;
+#githubIcon{
+  font-size: 2rem;
+  color:var(--header-text-color)
 }
-
+/* Footer */
+footer {
+  padding: 20px;
+  background: var(--background-color); /* Fixed typo */
+  color: var(--header-text-color);
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
 /* Footer */
 footer {
   padding: 20px;
@@ -414,7 +399,7 @@ footer {
 .educationHeading {
   text-align: center;
   font-size: 36px;
-  color: var(--primary-color);
+  color: var(--header-text-color);
   margin-bottom: 20px;
 }
 
@@ -503,7 +488,7 @@ footer {
 .contact-heading {
   font-size: 36px;
   margin-bottom: 2rem;
-  color: #007bff;
+  color: var(--header-text-color);
 }
 
 .contact-paragraph {
@@ -542,7 +527,9 @@ footer {
   height: 60px;
   font-size: 40px;
 }
- 
+ .copyright{
+  font-size: 1.2rem;
+ }
 @media (max-width: 257px) {
 }
 /* Let's Make It respnsive */
@@ -730,4 +717,9 @@ footer {
 .hambargur:hover{
   transform:scale(1.2);
   cursor: pointer;
+}
+.colorChange{
+  background-color: var(--background-color);
+  /* border:2px solid red; */
+  color:var(--header-text-color)
 }
