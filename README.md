@@ -29,11 +29,11 @@ Here are some of the projects I have worked on:
 - **Live Demo:** [https://ecommerce-mern-mu.vercel.app/](#)
 - **Source Code:** [https://github.com/Aryanpatel1066/ecommerce_mern](#)
 
-### Project 2: [flipkart clone]
-- **Description:** A Flipkart homepage clone with a dynamic product listing page using API calls. Built with HTML, CSS, and JavaScript for a responsive and interactive shopping experience.
-- **Technologies Used:** html5 css js.
-- **Live Demo:** [https://aryanpatel1066.github.io/flipkartClone/index.html](#)
-- **Source Code:** [https://github.com/Aryanpatel1066/flipkartClone](#)
+### Project 2: [News Blog App]
+- **Description:**  Stay informed with our **News Blog App**, delivering real-time updates, in-depth articles, and trending stories across various categories. Customize your feed and explore reliable news anytime, anywhere!
+- **Technologies Used:** html5 css js and Reactjs.
+- **Live Demo:** [https://newspaper-blog-seven.vercel.app/](#)
+- **Source Code:** [https://github.com/Aryanpatel1066/newspaper_blog](#)
   
 ### Project 3: [Notely note App]
 - **Description:**  A MERN stack-powered Todo app with intuitive task management, real-time updates, and a sleek user interface. Organize tasks efficiently with CRUD functionality.
