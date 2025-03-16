@@ -21,13 +21,13 @@ const projectImgs = [
       githublink:"https://github.com/Aryanpatel1066/notely-mern"
     },
     {
-      link: "https://aryanpatel1066.github.io/flipkartClone/index.html",
-      languages:["HTML5","CSS3","JS(ES6)","Product API"],
-      title:"Flipkart Clone",
-      description:"A Flipkart homepage clone with a dynamic product listing page using API calls. Built with HTML, CSS, and JavaScript for a responsive and interactive shopping experience.",
+      link: "https://newspaper-blog-seven.vercel.app/",
+      languages:["HTML5","CSS3","JS(ES6)","React JS"],
+      title:"NewsBlog App",
+      description:"Stay informed with our News Blog App, delivering real-time updates, in-depth articles, and trending stories across various categories. Customize your feed and explore reliable news anytime, anywhere!",
       img: project2,
       alt: "Project 2",
-      githublink:"https://github.com/Aryanpatel1066/flipkartClone"
+      githublink:"https://github.com/Aryanpatel1066/newspaper_blog"
     },
    
     // Add more projects as needed
