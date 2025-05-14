@@ -1,8 +1,20 @@
 import project3 from "../assets/imgs/project3.jpg";
 import project2 from "../assets/imgs/project2.jpg"
 import project1 from "../assets/imgs/project1.jpg"
+import project4 from "../assets/imgs/project4.jpg"
 const projectImgs = [
-    {
+    
+  {
+      link: "https://mern-salon-apointment.vercel.app/",
+      languages:["Mongo DB","express.js","React","Node.js","NodeMailer"],
+      title:"SalonBliss App",
+      description:"A full-stack salon appointment booking App built using the MERN stack , It allows users to browse services, schedule appointments, and receive booking confirmations via email using NodeMailer.",
+      img: project4,
+      alt: "Project 4",
+      githublink:"https://github.com/Aryanpatel1066/Mern-Salon-Apointment"
+    },
+   
+  {
       link: "https://ecommerce-mern-mu.vercel.app/",
       languages:["Mongo DB","express.js","React","Node.js"],
       title:"Shopyfy Ecommerce",
@@ -30,7 +42,7 @@ const projectImgs = [
       githublink:"https://github.com/Aryanpatel1066/newspaper_blog"
     },
    
-    // Add more projects as needed
+     
   ];
   
   export default projectImgs;
