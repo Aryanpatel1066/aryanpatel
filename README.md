@@ -40,6 +40,12 @@ Here are some of the projects I have worked on:
 - **Technologies Used:** Node.js, React.js, Mongo DB, express js, tailwind css.
 - **Live Demo:** [https://notely-mern.vercel.app/](#)
 - **Source Code:** [https://github.com/Aryanpatel1066/notely-mern](#)
+- 
+### Project 4: [Salon Bliss]
+- **Description:** A full-stack salon appointment booking App built using the MERN stack , It allows users to browse services, schedule appointments, and receive booking confirmations via email using NodeMailer.
+- **Technologies Used:** Node.js, React.js, Mongo DB, express js, tailwind css.
+- **Live Demo:** [https://mern-salon-apointment.vercel.app/](#)
+- **Source Code:** [https://github.com/Aryanpatel1066/Mern-Salon-Apointment](#)
 
 ## 📫 Contact
 Feel free to reach out to me through the following platforms:
