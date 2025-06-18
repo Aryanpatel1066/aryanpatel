@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FaCode } from "react-icons/fa";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 
 const Header = () => {
@@ -52,6 +53,15 @@ const Header = () => {
           <a href="#about" className="hover:text-blue-500 transition">About</a>
           <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
           <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+            <a
+            href="/Aryan_Patel_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition flex items-center gap-2"
+          >
+            <FontAwesomeIcon icon={faFilePdf} />
+            <span>Resume</span>
+          </a>
           {/* Theme Toggle */}
           <button onClick={toggleTheme} className="text-xl focus:outline-none">
             <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />
@@ -72,6 +82,15 @@ const Header = () => {
           <a href="#about" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>About</a>
           <a href="#projects" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>Projects</a>
           <a href="#contact" className="hover:text-blue-500 transition" onClick={() => setOpen(false)}>Contact</a>
+           <a
+            href="/Aryan_Patel_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition flex items-center gap-2"
+          >
+            <FontAwesomeIcon icon={faFilePdf} />
+            <span>Resume</span>
+          </a>
           {/* Theme Toggle */}
           <button onClick={toggleTheme} className="text-xl focus:outline-none">
             <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />
